@@ -4,10 +4,10 @@ import XsHeader from "./XsHeader"
 const Header = () => {
   return (
     <>
-    <div className="md:hidden">
+    <div className="">
         <XsHeader />
     </div>    
-    <div className="hidden md:block">
+    <div className="hidden">
         <SmHeader />
     </div>    
     </>
