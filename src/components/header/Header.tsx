@@ -1,17 +1,17 @@
-import SmHeader from "./SmHeader"
-import XsHeader from "./XsHeader"
+import SmHeader from "./SmHeader";
+import XsHeader from "./XsHeader";
 
 const Header = () => {
   return (
     <>
-    <div className="">
+      <div className="md:hidden">
         <XsHeader />
-    </div>    
-    <div className="hidden">
+      </div>
+      <div className="hidden md:block">
         <SmHeader />
-    </div>    
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
