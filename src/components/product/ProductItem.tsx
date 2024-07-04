@@ -1,4 +1,3 @@
-import Car4 from "../../assets/imgs/prods/car44.jpg";
 import { RxCaretRight } from "react-icons/rx";
 
 const ProductItem = ({ car }) => {
