@@ -3,9 +3,9 @@ import { RxCaretRight } from "react-icons/rx";
 
 const ProductItem = ({ car }) => {
   return (
-    <div className="md:w-[350px] hover:shadow-2xl my-4 mx-4 bg-gray-200 rounded-b-2xl">
+    <div className="md:w-[450px] hover:shadow-2xl my-4 mx-4 bg-gray-200 rounded-b-2xl">
       <div className="flex justify-center">
-        <img src={Car4} className="md:w-[350px]" />
+        <img src={car.img} className="w-full md:w-[450px]" />
       </div>
       <div className="px-4 pb-4 ">
         <h5 className="text-lg">{car.year}</h5>
