@@ -10,16 +10,13 @@ const ProductItem = ({ car }) => {
         <h5 className="text-lg">{car.year}</h5>
         <h3 className="text-3xl font-bold">{car.name}</h3>
         <div className="flex justify-between">
-          <div className="flex items-center">
+          <div className="flex flex-col">
             <h4 className="text-2xl font-bold">Ksh. {car.price}</h4>
             <p className="text-lg">***{car.status}</p>
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-col">
             <h3 className="text-xl font-bold">Millage</h3>
-            <div className="flex items-center">
-              <h4 className="text-2xl">{car.millage}</h4>
-              <p className="text-lg"></p>
-            </div>
+            <h4 className="text-2xl">{car.millage}</h4>
           </div>
         </div>
         {car.seller !== "" && (
@@ -37,9 +34,11 @@ const ProductItem = ({ car }) => {
           <p>12.3 Audio Multimedia</p>
         </div>
         <div>
-          <div className="flex items-center">
-            <p className="text-xl font-bold">See More Features</p>
-            <RxCaretRight size={24} />
+          <div className="flex mt-2">
+            <div className="flex items-center hover:border-b-2 hover:border-green-600 cursor-pointer">
+              <p className="text-xl font-bold">See More Features</p>
+              <RxCaretRight size={24} />
+            </div>
           </div>
         </div>
       </div>
