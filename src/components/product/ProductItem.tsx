@@ -1,4 +1,5 @@
 import { RxCaretRight } from "react-icons/rx";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const ProductItem = ({ car }) => {
   return (
@@ -33,11 +34,15 @@ const ProductItem = ({ car }) => {
           <p>Leather Seats</p>
           <p>12.3 Audio Multimedia</p>
         </div>
-        <div>
+        <div className="flex justify-between">
           <div className="flex mt-2">
-            <div className="flex items-center hover:border-b-2 hover:border-green-600 cursor-pointer">
+            <div className="flex items-center hover:border-b-2 hover:border-orange-600 cursor-pointer">
               <p className="text-xl font-bold">See More Features</p>
               <RxCaretRight size={24} />
+            </div>
+            <div className="flex items-center justify-end cursor-pointer hover:border-b-2 hover:border-green-600">
+              <FaWhatsapp size={24} className="text-green-600" />
+              <span className="ml-2">Whatsapp</span>
             </div>
           </div>
         </div>
